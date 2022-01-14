@@ -2,9 +2,9 @@ name: Integration Testing
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
 
     - name: Build
       run: dotnet build --no-restore
-      
+
     - name: TestPGSQL
       env:
         dbProvider: PGSQL
