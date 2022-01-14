@@ -9,7 +9,7 @@ namespace GloboTicket.TicketManagement.API.IntegrationTests.Base
 {
     public class DbFixture : IDisposable
     {
-       
+       //ok
         private readonly  GloboTicketDbContext _applicationDbContext;
         private readonly GloboTicketIdentityDbContext _identityDbContext;
         public readonly string ApplicationDbName = $"Application-{Guid.NewGuid()}";
